@@ -11,9 +11,70 @@
     */
 
     //ENTRADA
+  const per1 = prompt("Telefonou para a vítima? S/N").trim().toUpperCase();
+  const per2 = prompt("Esteve no local do crime? S/N").trim().toUpperCase();
+  const per3 = prompt("Mora perto da vítima? S/N").trim().toUpperCase();
+  const per4 = prompt("Devia para a vítima? S/N").trim().toUpperCase();
+  const per5 = prompt("Já trabalhou com a vítima? S/N?").trim().toUpperCase();
 
-    
-    //PROCESSAMENTO
+
+  //PROCESSAMENTO
+  let contagem = 0
+
+  //SAÍDA
+
+  switch(per1){
+    case "S":
+        contagem = contagem + 1
+  }
+  switch(per2){
+    case "S":
+        contagem = contagem + 1
+  }
+  switch(per3){
+    case "S":
+        contagem = contagem + 1
+  }
+  switch(per4){
+    case "S":
+        contagem = contagem + 1
+  }
+  switch(per5){
+    case "S":
+        contagem = contagem + 1
+  }
+  
+
+
+  switch(contagem){
+    case 0:
+    alert("inocente")
+    break;
+
+    case 1:
+    alert("inocente")
+    break;
+
+    case 2:
+    alert("suspeita")
+    break;
+
+    case 3:
+    alert("suspeita")
+    break;
+
+    case 4: 
+    alert("cumplice")
+    break
+
+    case 5: 
+    alert("assassino")
+    break;
+
+    default:
+    alert("resultado invalido")
+    break;
+  }
 
 
     //SAÍDA
